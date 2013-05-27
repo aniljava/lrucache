@@ -7,7 +7,7 @@
 // When an element is accessed it is promoted to the head of the list, and when
 // space is needed the element at the tail of the list (the least recently used
 // element) is evicted.
-package lrucache
+package cache
 
 import (
 	"container/list"
@@ -39,12 +39,6 @@ type Value interface {
 type Item struct {
 	Key   string
 	Value Value
-}
-
-type ByteValue []byte
-
-func (value ByteValue) Size() int {
-	return len(value)
 }
 
 type entry struct {
