@@ -2,7 +2,10 @@
 
 Mirror of: https://code.google.com/p/vitess/source/browse/go/cache/
 
-Package name is changed to lrucache from cache to match the project name.
+## Changes
+
+- Package name is changed to lrucache from cache to match the project name.
+- lrucache.ByteValue is introduced for []byte as value
 
 ## Usage
 
