@@ -2,6 +2,8 @@
 
 Mirror of: https://code.google.com/p/vitess/source/browse/go/cache/
 
+See original project for License and other info. Copied for the ease of import.
+
 ## Changes
 
 - Package name is changed to lrucache from cache to match the project name.
@@ -27,3 +29,4 @@ Mirror of: https://code.google.com/p/vitess/source/browse/go/cache/
         data, _ := cache.Get(key)
         fmt.Println(data.(lrucache.ByteValue))
     }
+
