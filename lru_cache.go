@@ -41,6 +41,12 @@ type Item struct {
 	Value Value
 }
 
+type ByteValue []byte
+
+func (value ByteValue) Size() int {
+	return len(value)
+}
+
 type entry struct {
 	key           string
 	value         Value
